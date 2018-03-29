@@ -211,17 +211,17 @@ power_down(void)
   board_spi_write(&cmd, sizeof(cmd));
   deselect();
 
-  i = 0;
-  while(i < 10) {
-    if(verify_part() == VERIFY_PART_POWERED_DOWN) {
-      /* Device is powered down */
-      return;
-    }
-    i++;
-  }
-
-  /* Should not be required */
-  deselect();
+//  i = 0;
+//  while(i < 10) {
+//    if(verify_part() == VERIFY_PART_POWERED_DOWN) {
+//      /* Device is powered down */
+//      return;
+//    }
+//    i++;
+//  }
+//
+//  /* Should not be required */
+//  deselect();
 }
 /*---------------------------------------------------------------------------*/
 /**
